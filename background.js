@@ -3,7 +3,7 @@
 
 var numOfTabs = 5;
 var openTabs=0;
-var debugMode = true;
+var debugMode = false;
 var searchMatrix;
 
 //                              <------Listeners Sections------->

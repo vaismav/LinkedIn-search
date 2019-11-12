@@ -1,0 +1,182 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, Sans-Serif;
+            font-size: 0.75em;
+            color: #000;
+            overflow: scroll;
+        }
+
+        .Table{
+            top: 150px;
+        }
+        .clear {
+        position: absolute;
+        left:300px;
+        top: 100px;
+        }
+
+        .clear a{
+            color: red
+        }
+
+        .desc {
+            color: #6b6b6b;
+        }
+
+        .desc a {
+            color: #0092dd;
+        }
+
+        .dropdown dd, .dropdown dt, .dropdown ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dropdown dd {
+            position: relative;
+        }
+
+        .dropdown a, .dropdown a:visited {
+            color: #816c5b;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .dropdown a:hover {
+            color: #5d4617;
+        }
+
+        .dropdown dt a:hover {
+            color: #5d4617;
+            border: 1px solid #d0c9af;
+        }
+
+        .dropdown dt a {
+            background: #e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center;
+            display: block;
+            padding-right: 20px;
+            border: 1px solid #d4ca9a;
+            width: 150px;
+        }
+
+        .dropdown dt a span {
+            cursor: pointer;
+            display: block;
+            padding: 5px;
+        }
+
+        .dropdown dd ul {
+            background: #e4dfcb none repeat scroll 0 0;
+            border: 1px solid #d4ca9a;
+            color: #C5C0B0;
+            left: 0px;
+            padding: 5px 0px;
+            position: absolute;
+            top: 2px;
+            width: auto;
+            min-width: 170px;
+            list-style: none;
+        }
+
+        .dropdown span.value {
+            display: none;
+        }
+
+        .dropdown dd ul li a {
+            padding: 5px;
+            display: block;
+        }
+
+        .dropdown dd ul li a:hover {
+            background-color: #d0c9af;
+        }
+
+        .dropdown img.flag {
+            border: none;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .flagvisibility {
+            display: none;
+        }
+
+        .inputs {
+            margin-bottom: 20px;
+        }
+
+        .inputs .input-field {
+            margin-bottom: 10px;
+        }
+
+        .inputs .input-field span {
+            margin-right: 8px;
+        }
+
+        .inputs input {
+            width: 400px;
+            height: 22px;
+        }
+    </style>
+    <script src="background.js"></script>
+</head>
+
+<body>
+<div>
+    <div class="inputs">
+        <div class="input-field">
+            <span>Assets:(names)</span>
+            <input type='text' value='' placeholder='insert asset' id='assets-input' value='default'/>
+        </div>
+        <div class="input-field">
+            <span>Assets to cross with:(company)</span>
+            <input type='text' value='' placeholder='insert companies' id='companies-input' value='default'/>
+        </div>
+    </div>
+
+    <dl id="sample" class="dropdown">
+        
+        <dd>
+            <ul>
+                <li><a href='#' open='all' >LinkedIn Search<img class="flag"
+                                                                                       src="https://i.imgur.com/GZe0Ony.jpg"
+                                                                                       alt=""/></a></li>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+
+
+   
+
+    <span id="result"></span>
+</div>
+<div  class="clear">
+
+<p id="clearStorage">
+        
+    <a href='#'  >Clear Storage</a>
+    <p id="stopSearch" >
+            
+        <a href='#'  >Stop Search</a>
+         
+    </p>  
+     
+</p>  
+</div>
+<div class= "Table">
+    <table  id="table" >
+
+    </table>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
